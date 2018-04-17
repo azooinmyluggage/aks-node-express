@@ -1,6 +1,6 @@
 [environments]
   [environments.development]
-    name = "Application"
+    name = "application"
     namespace = "default"
     wait = false
     watch = false
