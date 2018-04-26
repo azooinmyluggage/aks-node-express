@@ -1,0 +1,8 @@
+# Default values for node.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+replicaCount: 2
+service:
+  name: redis-cache
+  port: 6379
+basedomain: foo.redis-cache.com
