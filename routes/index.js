@@ -8,6 +8,7 @@ var redisServer = process.env.redis_server || 'redis-cache';
 console.log(redisServer);
 var client = redis.createClient(6379, redisServer);
 console.log("redis client created");
+client.set('foo', 'bar');
 
 /* GET home page. */
 router.get('/', function (req, res) {
