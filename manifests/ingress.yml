@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+    name: "forresterdemo-32a0"
+    labels:
+        app: "forresterdemo-32a0"
+    annotations:
+        kubernetes.io/ingress.class: addon-http-application-routing
+spec:
+    rules:
+        - host: forresterdemo0598-forresterdemo-32a0.083629500d5a44fe97e4.eastus.aksapp.io
+          http:
+            paths:
+            - path: /
+              backend:
+                serviceName: "forresterdemo-32a0"
+                servicePort: 8080
