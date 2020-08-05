@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: "forresterdemo-32a0"
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: "forresterdemo-32a0"
+    spec:
+      containers:
+        - name: "forresterdemo-32a0"
+          image: "gopiacr.azurecr.io/forresterdemo"
+          ports:
+          - containerPort: 8080
