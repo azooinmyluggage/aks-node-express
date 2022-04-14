@@ -1,6 +1,6 @@
 | Language | Framework | Platform | Author |
 | -------- | -------- |--------|--------|
-| Nodejs | Express | Azure Web App, Virtual Machine| |
+| Nodejs | Express | AKS | Azure Web App, Virtual Machine| |
 
 
 # Nodejs Express web application
